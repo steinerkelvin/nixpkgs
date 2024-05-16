@@ -7,14 +7,14 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "hvm";
-  version = "1.0.9";
+  version = "2.0.3";
 
   src = fetchCrate {
     inherit pname version;
-    hash = "sha256-dO0GzbMopX84AKOtJYYW6vojcs4kYcZ8LQ4tXEgUN7I=";
+    hash = "sha256-Z9ibOnlpgq9CRH61ys/eAy36etSPnWdA9FzGyeQdc08=";
   };
 
-  cargoHash = "sha256-RQnyVRHWrqnKcI3Jy593jDTydG1nGyrScsqSNyJTDJk=";
+  cargoHash = "sha256-45SBU2+mEKU9A00AchLAzkqcCwNLhwbPGqaQGzbcg54=";
 
   buildInputs = lib.optionals stdenv.isDarwin [
     darwin.apple_sdk_11_0.frameworks.IOKit
